@@ -8,17 +8,7 @@
 <!-- select all in table table_cities db -->
 <?php
 // oop conection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "new_db";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+require '../conf/conf2.php';
 
 $sql = "SELECT * FROM `table_cities`";
 $result = $conn->query($sql);
@@ -27,7 +17,7 @@ if ($result->num_rows > 0) {?>
 
 <table class="table table-info table-hover rounded">
   <thead >
-    <tr class="h-25"> 
+    <tr> 
       <th scope="col">Id</th>
       <th scope="col">Title</th>
       <th scope="col">Description</th>

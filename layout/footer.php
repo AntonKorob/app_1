@@ -8,6 +8,6 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
     <p class="text-center text-body-secondary">© <?php echo date("Y")?> Company, Inc</p>
-  </footer>
+</footer>
 </body>
 </html>
