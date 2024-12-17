@@ -1,5 +1,6 @@
 
-<footer class=" position-absolute bottom-0 start-50 translate-middle-x py-3 my-4">
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+  <div class="container">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
@@ -8,6 +9,8 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
     <p class="text-center text-body-secondary">© <?php echo date("Y")?> Company, Inc</p>
+  </div>
 </footer>
+
 </body>
 </html>

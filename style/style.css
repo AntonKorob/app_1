@@ -1,7 +1,29 @@
+body{
+ background-image: url("/img/fon_1.png");   
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+  }
+body{
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 .header{
     background-color: #62a8e9;
 }
 .footer{
     background-color: #93e8f3;
+}
+h3, p{
+    color: rgb(34, 32, 32);
 }
