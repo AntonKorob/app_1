@@ -73,6 +73,7 @@ if ($result->num_rows > 0) {?>
      <div class="col ">
          <div class="card  m-4 rounded-3 shadow-sm ">
              <div class="card-header bg-info p-2 text-black bg-opacity-75 py-3 ">
+                <img src="../img/img_<?php echo $row['id']?>.png" class="rounded-circle" alt="">
                  <h4 class="mt-0 fw-normal"><?php echo $row['title'] ?></h4>
                 </div>
                 <div class="card-body">
