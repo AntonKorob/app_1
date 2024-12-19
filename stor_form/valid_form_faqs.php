@@ -1,6 +1,6 @@
 <?php
 // define variables and set to empty values
-$email = $massege= "";
+$email = $message= "";
 
 if( isset($_POST['email'], $_POST['message']) ) {
   $email = test_input($_POST["email"]);

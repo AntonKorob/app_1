@@ -5,7 +5,7 @@ require '../conf/conf.php';
 // Validate Form Data
 require '../stor_form/valid_form_faqs.php';
 
-// Create sql
+// 
 $error = '';
 
 if($email == ''){
