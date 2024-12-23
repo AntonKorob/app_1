@@ -21,7 +21,7 @@
 
     <div class="col-md-2">
       <a href="/" class=" link-body-emphasis text-decoration-none ">
-        <img class="m-4" src="../img/logo_1.png" alt="www" width="72" height="57">
+        <img class="rounded-4 m-4" src="../img/logo_1.png" alt="www" width="72" height="57">
       </a>
     </div>
     <ul class="nav col-12 col-md-auto ">

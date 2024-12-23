@@ -12,6 +12,11 @@
             $("#panel_2").slideToggle("slow")
         })
     })
+    $(document).ready(function() {
+        $("#btn_catalog_sec_2").click(function() {
+            $("#panel").slideToggle("slow")
+        })
+    })
 
 
     $(document).ready(function() {
