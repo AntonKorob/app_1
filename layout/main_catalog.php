@@ -3,7 +3,7 @@ require('../js/catalog.js');
 ?>
 <div class="container d-flex  w-75 mt-5">
     <!-- list-group -->
-    <div class="left_menu justify-content-evenly w-25">
+    <div class="left_menu justify-content-evenly w-25 ">
 
         <!-- search input -->
         <?php require "../layout/components/catalog_search_input.php";
@@ -36,5 +36,8 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 </div>
+
+    
+</script>
 </div>
 </div>
