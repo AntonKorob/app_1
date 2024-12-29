@@ -39,6 +39,21 @@
       <li><a href="../pages/pricing.php" class="nav-link px-2">Pricing</a></li>
       <li><a href="../pages/faqs.php" class="nav-link px-2">FAQs</a></li>
       <li><a href="../pages/about.php" class="nav-link px-2">About</a></li>
+      <li>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Help
+          </button>
+          <ul class="dropdown-menu">
+          <li><a href="../pages/help_1.php" class="nav-link px-2">Help 1</a></li>
+          <li><a href="../pages/help_2.php" class="nav-link px-2">Help 2</a></li>
+          <li><a href="../pages/help_3.php" class="nav-link px-2">Help 3</a></li>
+          <li><a href="../pages/help_4.php" class="nav-link px-2">Help 4</a></li>
+          
+          </ul>
+        </div>
+
     </ul>
 
     <div class="col-md-3 text-end me-3">

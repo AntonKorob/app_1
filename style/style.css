@@ -27,3 +27,6 @@ body{
 h3, p{
     color: rgb(34, 32, 32);
 }
+#form_selection_help_2{
+    height:200px;
+}
