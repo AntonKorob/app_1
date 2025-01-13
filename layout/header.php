@@ -50,6 +50,7 @@
           <li><a href="../pages/help_2.php" class="nav-link px-2">Help 2</a></li>
           <li><a href="../pages/help_3.php" class="nav-link px-2">Help 3</a></li>
           <li><a href="../pages/help_4.php" class="nav-link px-2">Help 4</a></li>
+          <li><a href="../pages/help_5.php" class="nav-link px-2">Help 5</a></li>
           
           </ul>
         </div>
