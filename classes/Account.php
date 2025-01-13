@@ -2,7 +2,7 @@
 class Accaunt{
     public $number;
     public $type;
-    public $balance;
+    protected $balance;
 
     public function __construct($number, $type, $balance = 0.00)
     {
@@ -18,6 +18,10 @@ class Accaunt{
 
     public function withdraw($amount){
         $this->balance -= $amount;
+        return $this->balance;
+    }
+
+    public function getBalance(){
         return $this->balance;
     }
 }

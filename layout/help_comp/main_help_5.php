@@ -104,8 +104,8 @@
                         </tr> 
                         <tr>
                             <td>23 June</td>
-                        <td>$<?= $checking->balance;?></td>
-                        <td>$<?= $savings->balance;?></td>
+                        <td>$<?= $checking->getBalance();?></td>
+                        <td>$<?= $savings->getBalance();?></td>
                     </td>
                     <tr>
                         <td>24 June</td>
