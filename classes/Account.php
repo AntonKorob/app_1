@@ -1,5 +1,5 @@
 <?php
-class Accaunt
+class Account
 {
     public $number;
     public $type;

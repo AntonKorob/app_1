@@ -57,7 +57,7 @@
                 public $password;
             }
 
-            class Account
+            class Account1
             {
                 public $number;
                 public $type;
@@ -76,7 +76,7 @@
             }
 
             $customer = new Customer();
-            $account = new Account();
+            $account = new Account1();
             $customer->email = 'ivy@eg.link';
             $account->balance = 1000.00;
 
@@ -91,8 +91,8 @@
             <div class="col mt-4 ">
                 <?php
                 include '../classes/Account.php';
-                $checking = new Accaunt(43161176, 'Checking', 32.00);
-                $savings = new Accaunt(20148896, 'Savings', 756.00);
+                $checking = new Account(43161176, 'Checking', 32.00);
+                $savings = new Account(20148896, 'Savings', 756.00);
 
                 ?>
 
@@ -121,18 +121,18 @@
                     </tr>
 
                 </table>
-                <div class="bg bg-secondary rounded-3 mt-5 p-2 w-50">
+                <div class="bg bg-info-subtle rounded-3 mt-5 p-4 w-50">
 
                     <?php
                     $numbers = [
                         'account_number' => 12345678,
                         'routing_number' => 987654321
                     ];
-                    $account = new Accaunt($numbers, 'Savings', 10.00);
+                    $account = new Account($numbers, 'Savings', 10.00);
                     ?>
                     <h2><?= $account->type ?> acount</h2>
-                    <p>Account: <?= $account->number['account_number'] ?></p>
-                    <p>Account: <?= $account->number['routing_number'] ?></p>
+                    <p class="border-bottom border-secondary">Account: <?= $account->number['account_number'] ?></p>
+                    <p class="border-bottom border-secondary">Account: <?= $account->number['routing_number'] ?></p>
                 </div>
 
             </div>

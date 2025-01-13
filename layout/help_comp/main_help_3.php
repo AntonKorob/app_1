@@ -8,8 +8,8 @@
         <div class="form col-4">
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'GET'){
-            // if(!empty($_GET['attributes'])){
-                $attrs = $_GET['attributes'];
+
+                $attrs = $_GET['attributes']?? 'Запись пуста!';
             } else {
                 echo "Запись пуста!";
             }
@@ -35,10 +35,10 @@
             );
 
             ?>
+
             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="get">
 
                 <?php makeCheckboxes('attributes[]', $attrs, $personalityAttributes) ?></br>
-                <!-- <input type="submit" name="s" value="Записать"> -->
                 <button class="btn btn-outline-primary" type="submit" name="s" >Записать</button>
                 <button class="btn btn-outline-secondary" type="reset" name="reset"><a class="text-decoration-none text-dark" href="../pages/help_3.php">Сбросить</a></button>
             </form>
