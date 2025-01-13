@@ -49,7 +49,7 @@
         </div>
         <div class="col">
             <?php
-            class Customer
+            class Customer1
             {
                 public $forename;
                 public $surename;
@@ -75,7 +75,7 @@
                 }
             }
 
-            $customer = new Customer();
+            $customer = new Customer1();
             $account = new Account1();
             $customer->email = 'ivy@eg.link';
             $account->balance = 1000.00;
