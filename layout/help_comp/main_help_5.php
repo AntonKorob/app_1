@@ -86,8 +86,40 @@
             <p>$<?= $account->deposit(50.00)?></p>
         </div>
         <div class="row">
-            <div class="col">
-                
+            <div class="col mt-4 ">
+                <?php 
+                include '../classes/Account.php';
+                $checking = new Accaunt(43161176, 'Checking', 32.00);
+                $savings = new Accaunt(20148896, 'Savings', 756.00);
+
+                ?>
+            
+                <h2 class="text-center m-3">Account Balances</h2>
+
+                    <table id="table_account_balances" class="table mx-auto p-2 w-50 border border-black "  >
+                        <tr>
+                            <th >Date</th>
+                            <th><?= $checking->type?></th>
+                            <th><?= $savings->type?></th>
+                        </tr> 
+                        <tr>
+                            <td>23 June</td>
+                        <td>$<?= $checking->balance;?></td>
+                        <td>$<?= $savings->balance;?></td>
+                    </td>
+                    <tr>
+                        <td>24 June</td>
+                        <td>$<?= $checking->deposite(12.00);?></td>
+                        <td>$<?= $savings->withdraw(100.00);?></td>
+                    </tr>
+                    <tr>
+                        <td>25 June</td>
+                        <td>$<?= $checking->deposite(5.00);?></td>
+                        <td>$<?= $savings->withdraw(300.00);?></td>
+                    </tr>
+                    
+                </table>
+
             </div>
         </div>
     </div>

@@ -30,3 +30,6 @@ h3, p{
 #form_selection_help_2{
     height:200px;
 }
+#table_account_balances{
+    border: solid #07131f;
+}
