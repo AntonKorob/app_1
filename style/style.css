@@ -1,6 +1,9 @@
 body{
  background-image: url("/img/fon_1.png");   
 }
+#table_item{
+    background-image: url("/img/fon_2.jpeg");
+}
 
 html{
     position: relative;
@@ -16,6 +19,9 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+}
+a {
+    text-decoration: none;
 }
 
 .header{

@@ -38,7 +38,7 @@
       <li><a href="../pages/about.php" class="nav-link px-2">About</a></li>
       <li><a href="../pages/pricing.php" class="nav-link px-2">Pricing</a></li>
       <li><a href="../pages/faqs.php" class="nav-link px-2">FAQs</a></li>
-      <li><a href="../pages/about.php" class="nav-link px-2">About</a></li>
+      <li><a href="../pages/info.php" class="nav-link px-2">Info</a></li>
       <li>
 
         <div class="btn-group">
@@ -46,20 +46,29 @@
             Help
           </button>
           <ul class="dropdown-menu">
-          <li><a href="../pages/help_1.php" class="nav-link px-2">Help 1</a></li>
-          <li><a href="../pages/help_2.php" class="nav-link px-2">Help 2</a></li>
-          <li><a href="../pages/help_3.php" class="nav-link px-2">Help 3</a></li>
-          <li><a href="../pages/help_4.php" class="nav-link px-2">Help 4</a></li>
-          <li><a href="../pages/help_5.php" class="nav-link px-2">Help 5</a></li>
-          <li><a href="../pages/help_6.php" class="nav-link px-2">Help 6</a></li>
-          
+            <li><a href="../pages/help_1.php" class="nav-link px-2">Help 1</a></li>
+            <li><a href="../pages/help_2.php" class="nav-link px-2">Help 2</a></li>
+            <li><a href="../pages/help_3.php" class="nav-link px-2">Help 3</a></li>
+            <li><a href="../pages/help_4.php" class="nav-link px-2">Help 4</a></li>
+            <li><a href="../pages/help_5.php" class="nav-link px-2">Help 5</a></li>
+            <li><a href="../pages/help_6.php" class="nav-link px-2">Help 6</a></li>
+            <li><a href="../pages/help_7.php" class="nav-link px-2">Help 7</a></li>
+
           </ul>
         </div>
 
     </ul>
 
     <div class="col-md-3 text-end me-3">
-      <button type="button" class="btn btn-outline-primary me-2"><a href="../pages/login.php" class="nav-link px-2">Login</a></button>
+      <?php
+      $logged_in = true;
+
+      if($logged_in == false) {
+        header('Location: ../pages/login.php');
+        exit;
+      } ?>
+      
+      <button type="button" class="btn btn-outline-primary me-2"><a href="../pages/login.php" class="nav-link px-2">Login</a></button>      
       <button type="button" class="btn btn-primary"><a href="../pages/sign_up.php" class="nav-link px-2">Sign-up</a></button>
     </div>
   </header>
