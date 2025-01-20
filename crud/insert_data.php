@@ -1,8 +1,10 @@
 <?php
+use PhpBook\Validate\Validate;
 // DB connection
 require '../conf/conf.php';
 // Validate Form Data
 require '../stor_form/valid_form.php';
+
 
 // Create sql
 
