@@ -16,13 +16,13 @@ foreach ($members as $member) {
             <a class="navbar-brand" href="../layout/categories.php">
                 <h3>Categories</h3>
             </a>
-            <button type="button" class="btn btn-outline-primary"><a href="../crud/create_categorie.php">Create New Categories</a></button>
+            <button type="button" class="btn btn-outline-primary"><a href="../crud/create_category.php">Create New Categories</a></button>
         </div>
         <div class="d-flex">
-            <a class="navbar-brand" href="../layout/atricles.php">
+            <a class="navbar-brand" href="../layout/articles.php">
                 <h3>Atricles</h3>
             </a>
-            <button type="button" class="btn btn-outline-primary"><a href="../crud/create_atricle.php">Create New Atricles</a></button>
+            <button type="button" class="btn btn-outline-primary"><a href="../crud/create_article.php">Create New Atricles</a></button>
         </div>
     </div>
 </nav>

@@ -2,11 +2,11 @@
 include '../conf/conf_pdo.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $id = $_POST['id'];
-    $categorie = $_POST['categorie'];
+    $category = $_POST['category'];
     $description = $_POST['description'];
 }
 
-$sql = "UPDATE cargories SET id = $id, categorie = $categorie, description = $description ";
+$sql = "UPDATE cargories SET id = $id, category = $category, description = $description ";
 $stm = $pdo->query($sql);
 require '../layout/header.php';
 ?>

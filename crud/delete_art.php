@@ -7,4 +7,4 @@ if (isset($_GET['id'])) {
     
 } 
 
-header('Location: ../layout/atricles.php');
+header('Location: ../layout/articles.php');

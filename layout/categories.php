@@ -1,7 +1,7 @@
 <?php
 include '../conf/conf_pdo.php';
 
-$sql = "SELECT id, categorie, description, timestemp FROM cargories";
+$sql = "SELECT id, category, description, timestemp FROM cargories";
 $stm = $pdo->query($sql);
 $categories = $stm->fetchAll();
 
@@ -11,7 +11,7 @@ $title = "Categories";
 
 require '../layout/header.php';
 require '../layout/main_admin.php';
-foreach ($categories as $categorie) { ?>
+foreach ($categories as $category) { ?>
     <div>
         
         <form action="../crud/delete_cat.php" method="get">
@@ -28,16 +28,16 @@ foreach ($categories as $categorie) { ?>
             </thead>
                 <tbody>
                     <tr>
-                        <td><?= $categorie['id']; ?></td>
-                        <td><?= $categorie['categorie']; ?></td>
-                        <td><?= $categorie['description']; ?></td>
-                        <td><?= $categorie['timestemp']; ?></td>
+                        <td><?= $category['id']; ?></td>
+                        <td><?= $category['category']; ?></td>
+                        <td><?= $category['description']; ?></td>
+                        <td><?= $category['timestemp']; ?></td>
 
                         <td>
                             <button class="btn btn-info"><a href="../crud/update_cat.php">Up date</a></button>
                         </td>
                         <td>
-                            <button class="btn btn-danger" type="submit" name="id" value="<?php echo $categorie['id']; ?>">Delete</button>
+                            <button class="btn btn-danger" type="submit" name="id" value="<?php echo $category['id']; ?>">Delete</button>
             </form>
             </td>
             </tr>
