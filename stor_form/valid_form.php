@@ -10,10 +10,5 @@ if( isset($_POST['username'], $_POST['email'], $_POST['password']) ) {
          echo 'no insert';
     } 
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
+
 ?>

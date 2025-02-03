@@ -22,8 +22,8 @@ include '../conf/conf_pdo.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (isset($_POST['article'])) {
-        $article = $_POST['article'];
-        $creator = $_POST['creator'];
+        $article = test_input($_POST['article']);
+        $creator = test_input($_POST['creator']);
 
         $sql = "INSERT INTO articles(article,creator) VALUES ('$article', '$creator' ) ";
         $stm = $pdo->query($sql);

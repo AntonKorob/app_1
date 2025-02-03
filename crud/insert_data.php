@@ -4,6 +4,7 @@ use PhpBook\Validate\Validate;
 require '../conf/conf.php';
 // Validate Form Data
 require '../stor_form/valid_form.php';
+require '../functions/validate_form.php';
 
 
 // Create sql

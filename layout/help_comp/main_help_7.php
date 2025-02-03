@@ -8,9 +8,11 @@
                 'NYC' => '1245 7th Street, 10492'
             ];
 
-            $city = $_GET['city'];
-            $address = $cities[$city];
-            ?>
+
+    $city = $_GET['city'] ?? '';
+    $address = $cities[$city] ?? '';
+
+    ?>
 
             <?php foreach ($cities as $key => $value) { ?>
                 <button class="btn btn-secondary">
